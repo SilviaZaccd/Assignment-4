@@ -162,9 +162,11 @@ while True:
 
     sleep_ms(10)
 
-## 🎥 Media
+##  Media
 
-![1E44D639-3916-4227-86AE-6ED74E586BC4_1_102_o](https://github.com/user-attachments/assets/e9de2b18-3099-43aa-8948-71dcd2ac0dd2)
+
+
+https://github.com/user-attachments/assets/9c1abf47-088f-4a12-a75b-555c5e4531e2
 
 
 
