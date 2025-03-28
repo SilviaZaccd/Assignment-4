@@ -13,8 +13,8 @@ MoodHalo is a smart headband designed to encourage better posture and reduce eye
 ---
 
 ## 📐 Posture Recognition Logic
+<img width="668" alt="Screenshot 2025-03-28 at 10 28 55" src="https://github.com/user-attachments/assets/3141099d-16a2-4700-81e7-e19ce0236fad" />
 
-![Head Movement Logic](diagrams/state-diagram.png) <!-- Replace with actual uploaded path or filename -->
 
 Supported movements:
 - **Vertical Tilt:** Up → Front-Up → Front → Front-Down → Down
@@ -75,8 +75,4 @@ ProtoPie shows real-time posture feedback in sync with hardware actions.
 - [Demo Video](media/demo-video.mp4)  
 - ![Prototype Photo](media/prototype-photo.jpg)
 
----
 
-## 📂 Folder Structure
-
-# Assignment-4
