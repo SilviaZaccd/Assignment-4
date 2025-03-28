@@ -164,7 +164,7 @@ while True:
 
 ## 🎥 Media
 
-- [Demo Video](media/demo-video.mp4)  
-- ![Prototype Photo](media/prototype-photo.jpg)
+![907B5672-C0AC-4F9C-A748-BE3795FD32D4_1_102_o](https://github.com/user-attachments/assets/34ecb08b-0f01-4ca5-b225-fc54b5e64e1f)
+
 
 
