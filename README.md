@@ -24,7 +24,7 @@ Each posture corresponds to a different LED color and a message sent to the Prot
 
 ---
 
-## 🧰 Hardware List
+##  Hardware List
 
 - M5Stack Atom Lite
 - IMU Pro Unit (connected to Port A)
@@ -35,17 +35,18 @@ Each posture corresponds to a different LED color and a message sent to the Prot
 
 ---
 
-## 🔌 Wiring Diagram
+##  Wiring Diagram
 
 - **IMU Sensor** → Port A (Red connector on Atom)
 - **RGB Strip DIN** → G26
 - **GND/5V** shared among components
 
-![Hardware Wiring](wiring/hardware-setup.jpg)
+![ChatGPT Image Mar 28, 2025, 10_44_12 AM](https://github.com/user-attachments/assets/a18f827c-8692-4cc5-b889-3e185342359e)
+
 
 ---
 
-## 🧾 Firmware Logic (Arduino)
+##  Firmware Logic (Arduino)
 
 1. Read IMU data (acceleration + gyroscope)
 2. Classify head direction using angle thresholds
