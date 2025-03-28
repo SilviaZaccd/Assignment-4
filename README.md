@@ -54,7 +54,7 @@ Each posture corresponds to a different LED color and a message sent to the Prot
 4. Send serial message to ProtoPie:  
    `direction||Front_Up`, `direction||Right`, etc.
 
-[Uploading final nimport os, sys, io
+import os, sys, io
 import M5
 from M5 import *
 from hardware import I2C, Pin, ADC
@@ -63,37 +63,37 @@ from time import sleep_ms, ticks_ms
 from neopixel import NeoPixel
 import m5utils  # 用于数值映射
 
-# 初始化 M5 硬件
+ 初始化 M5 硬件
 M5.begin()
 
-# 配置 I2C 端口
+配置 I2C 端口
 i2c = I2C(0, scl=Pin(21), sda=Pin(25), freq=100000)
 
-# 配置 IMU 传感器
+配置 IMU 传感器
 imu = IMUUnit(i2c)
 
-# 配置 NeoPixel LED（30 颗灯珠）
+配置 NeoPixel LED（30 颗灯珠）
 np = NeoPixel(Pin(23), 30)
 
-# 配置 ADC（光传感器）
+配置 ADC（光传感器）
 adc = ADC(Pin(32))
 adc.atten(ADC.ATTN_11DB)  # 设置 ADC 灵敏度
 
-# **阈值设定**
+ 阈值设定
 TILT_THRESHOLD_X = 500  # **前后倾斜 ±50° 才变红**
 TILT_THRESHOLD_Y = 500  # **左右倾斜 ±50° 才变蓝**
 LIGHT_THRESHOLD = 70  # **光传感器作弊点阈值**
 
-# 变量初始化
+变量初始化
 imu_timer, adc_timer = 0, 0
 r, g, b = 0, 0, 0
 r_final, g_final, b_final = 0, 0, 0
 
 while True:
-    # **读取光传感器**
+    读取光传感器
     light_val = adc.read()  # 立即读取光线数据
     lightLevel = int(m5utils.remap(light_val, 0, 4095, 0, 100))
-    #print(f'lightLevel||{lightLevel}')  # **发送光照值到 ProtoPie**
+    #print(f'lightLevel||{lightLevel}')  # 发送光照值到 ProtoPie
 
     # **🟢 光传感器作弊点：手遮住传感器 → 立即变绿**
     if lightLevel > LIGHT_THRESHOLD:
@@ -161,9 +161,6 @@ while True:
     np.write()  # **刷新 LED**
 
     sleep_ms(10)
-ikita 4.py…]()
-
----
 
 ## 🎥 Media
 
