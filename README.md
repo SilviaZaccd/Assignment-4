@@ -4,7 +4,7 @@ MoodHalo is a smart headband designed to encourage better posture and reduce eye
 
 ---
 
-## 🧠 Concept
+## Concept
 
 - **Primary Input:** IMU motion sensor to detect head tilt and direction.
 - **Primary Output:** RGB LED strip on the headband that changes color based on posture.
@@ -12,7 +12,7 @@ MoodHalo is a smart headband designed to encourage better posture and reduce eye
 
 ---
 
-## 📐 Posture Recognition Logic
+## Posture Recognition Logic
 <img width="668" alt="Screenshot 2025-03-28 at 10 28 55" src="https://github.com/user-attachments/assets/3141099d-16a2-4700-81e7-e19ce0236fad" />
 
 
